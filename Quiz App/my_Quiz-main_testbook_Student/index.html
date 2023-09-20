@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Master</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+
+<!-- -------------------------------------------------------HTML FOR INFORMATION BOX------------------------------ -->
+
+  <div class="info_box">
+    <div class="heading">
+        <h2> Rules for Quiz.</h2>
+    </div>
+    <div class="rules">
+        <p>1. Dear Learners there are Four Sections.</p>
+        <p>2. You can select any Sections</p>
+        <p>3. Each Section consist of 10 questions</p>
+        <p>4. You will have a <span>30 seconds</span> per each question.</p>
+        <p>5. Once you select your answer ,it can't be undone.</p>
+        <p>6. <b>Note :</b> You can't exit from the Quiz while you're playing.</p>
+        
+        <div class="btn">
+            <button id="continue"  type="button" style="font-size: 20px;">Continue</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- ------------------------------------------------------------HTML FOR USER BOX--------------------------------------------- -->
+
+    <div class="user_box">
+
+        <div class="header_image">
+            <img src="download.png" alt="" height="100px" width="100px">
+           
+  </div>
+
+<div class="user_info">
+    <h1>Hello User!</h1>
+    <h5>Enter your name to continue the Quiz.</h5>
+</div>
+
+<div class="user_manual">
+    
+        <div class="input_group">
+          <input
+            type="text"
+            placeholder="ENTER YOUR NAME"
+            required
+            id="user_name"
+            name="user_name"
+          />
+          <button id="form_submit" onclick="print_name()">Enter</button>
+      </div>
+      
+      <div id="display_name"> </div>
+      <h4> You'll have 30 seconds to answer each questions</h4>
+    </div>
+
+    <div class="categories_info">
+        <h1 style="padding: 10px;">Select Category</h1>
+        <div class="categories">
+          <span id="Pipes" >Pipes and Cisterns</span>
+          <span id="Prob">Probability</span>
+          <span id="Ages" >Problems On Ages</span>
+          <span id="Profit" >Profits And Losses</span>
+        </div>
+      </div>
+    <button id="reset_category">Back </button>
+  </div>
+</div>
+
+    <div class="quiz_box">
+
+     <div class="cat_title" style="font-size: 40px;font-weight:bold;">Probability</div>
+     <div class="score_meter">
+      
+     <div id="timer">  15</div>
+     <div id="score">Score : 0</div>
+ </div>
+
+    <fieldset>
+      <legend class="qcount">0/10</legend>
+       <div class="question">
+
+<!-------------------------------QUESTION WILL BE TAKEN FROM ARRAY----------------------------------------- -->
+
+       </div>
+    </fieldset>
+
+   
+<!-- -------------------------------------HTML FOR OPTION---------------------------------------- -->
+
+<div class="option_list">
+  <span type="button" id="ans1" class="option">Ans1</span>
+  <span type="button" id="ans2" class="option">Ans2</span>
+  <span type="button" id="ans3" class="option">Ans3</span>
+  <span type="button" id="ans4" class="option">Ans4</span>
+</div>
+
+
+<div class="next-button">
+
+    <!-----------------------------------------ALL NEXT BUTTON USED IN CATEGORIES---------------------------- -->
+
+    <button  type="button" id="next" class="btn">Next</button> 
+     <button  type="button" id="next2" class="btn">Next</button> 
+    <button  type="button" id="next3" class="btn">Next</button> 
+    <button  type="button" id="next4" class="btn">Next</button>  
+
+</div>
+
+    </div>
+
+<!---------------------------------------------------------------------HTML FOR RESULT BOX------------------------------------------------>
+
+    <div class="result_box">
+      <h2>Quiz Result</h2>
+      <div class="icon"> 
+       <img src="download-removebg-preview.png" alt="">
+      </div>
+      <div class="name-result">   <span> xxx</span> Your Result is</div>
+      <div class="time-taken">  <span>0</span>Total time taken.</div>
+       <div class="attempts">    <b>Questions Attempt: </b><span> 10</span>  </div>
+       <div class="correct">    Correct Answers <span> 0</span> </div>
+       <div class="wrong">      Wrong Answer:  <span> 0</span> </div>
+       <div class="Percentage"> Percentage Obtained :<span> %</span> </div>
+       <div class="buttons">
+        <button type="button" class="restart">Go to Home</button>
+      </div>
+  </div> 
+
+  <!-- -------------------------------------------ALL JAVA SCRIPT FILES USED -------------------------------------->
+
+<script src="questions_list.js"></script>
+<script src="pipesandcistern.js"></script>
+<script src="probability.js"></script>
+<script src="ages.js"></script>
+<script src="profitandloses.js"></script>
+
+</body>
+</html>

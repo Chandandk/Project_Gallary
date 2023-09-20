@@ -1,0 +1,184 @@
+:root {
+  --color_1: #293f50;
+  --color_2: #fff;
+  --color_3: #888;
+  --color_4: #648880;
+  --color_5: #a9b2b9;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: var(--color_1);
+  color: var(--color_3);
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+/* --------Custom style----------- */
+h1,
+h3,
+h4,
+h5,
+p {
+  margin-bottom: 22px;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color_4);
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+  color: var(--color_2);
+}
+h2 {
+  font-size: 24px;
+  line-height: 44px;
+  font-weight: 300;
+}
+h3 {
+  font-size: 21px;
+  font-weight: 300;
+}
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  color: var(--color_5);
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+strong {
+  font-weight: 400;
+}
+em {
+  font-style: italic;
+}
+
+/* -------Link--------------- */
+a {
+  color: var(--color_4);
+  text-decoration: none;
+}
+a p a:hover {
+  color: var(--color_5);
+}
+
+.primary-header a,
+.primary-footer a {
+  color: var(--color_2);
+}
+
+.primary-header a:hover,
+.primary-footer a:hover {
+  color: var(--color_4);
+}
+
+/* -------Header And NavBar */
+.logo {
+  float: left;
+  margin: -2rem 10rem;
+  font-weight: 100;
+  font-size: 3rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.tagline {
+  margin: 80px 220px 16px 0;
+  text-align: right;
+  font-weight: 300;
+}
+nav {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+nav > ul {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: right;
+  margin-right: 10rem;
+  margin-bottom: 2rem;
+  font-size: 12px;
+}
+.hero {
+  color: var(--color_2);
+  line-height: 44px;
+  padding: 22px 80px 66px 80px;
+  text-align: center;
+}
+.hero h2 {
+  font-size: 36px;
+}
+.hero p {
+  font-size: 20px;
+  font-weight: 100;
+}
+/* ---------Button------------- */
+
+.btn {
+  border-radius: 5px;
+  border: 1px solid #fff;
+  padding: 0 10px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 300;
+  font-size: medium;
+  letter-spacing: 0.5px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.btn:hover {
+  background: var(--color_2);
+}
+/* -----Row----------- */
+
+.row {
+  min-width: 960px;
+  background: #fff;
+  padding: 66px 0 44px 0;
+}
+/* -----------Grid-----------*/
+img {
+  width: 300px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 0 8rem;
+}
+.teaser p {
+  font-size: 0.8rem;
+}
+/* -----footer--------- */
+.primary-footer {
+  color: #648880;
+  font-size: 14px;
+  padding-top: 44px;
+}
+
+.primary-footer small {
+  float: left;
+  font-weight: 400;
+  margin-left: 10rem;
+}
